@@ -1,0 +1,1102 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@font-face {
+    font-family: "Cinzel Decorative";
+    src: url(font/CinzelDecorative-Regular.ttf) format("truetype");
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+/*===Navigasi bar*/
+nav{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 15px black;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    opacity: 85%;
+    z-index: 10;
+}
+nav .Logo img{
+    width: 100px;
+    margin-left: 10px;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+.menu-toggle{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+nav a:hover{
+    color: darkgoldenrod;
+}
+/*==hero==*/
+.hero{
+    height: 100vh;
+    background: url("images/background_hero.png");
+    background-size: cover;
+    background-position: top;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+.hero h1{
+    font-size: 70px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    margin: 30px;
+    color: white;
+    text-shadow: 0px  0px 15px black;
+    margin-top: 0px;
+}
+.hero p{
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 15px black;
+}
+.hero h1 span{
+    color: gold;
+}
+.hero .order-btn{
+    background-color: darkorange;
+    color: white;
+    border-radius: 15px;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    width: 150px;
+    box-shadow: 0px 0px 15px black;
+}
+.hero .order-btn:hover{
+    color: darkgoldenrod;
+    background-color: white;
+}
+.hero .sosmed{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 170px;
+    gap: 25px;
+
+}
+.ikon-instagram{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+}
+.ikon-tiktok{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 0px 15px black;
+}
+
+.shopee img{
+    width: 2rem;
+}
+/*===About===*/
+.about{
+    margin: 30px;
+    color: #C5A059;
+    font-size: 20px;
+}
+.about h2{
+    font-size: 70px;
+    padding: 150px 0px;
+    font-family: "Cinzel Decorative";
+}
+.about p{
+    padding: 50px 0px;
+    color: black;
+}
+
+.about .galeri-slider{
+    overflow: hidden;
+    display: flex;
+    width: 650px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px black;
+
+}
+.about .galeri-slider img {
+    width: 100%;
+    min-width: 100%;
+    flex: 0 0 100%;
+    animation: slider-gambar 12s infinite;
+}
+@keyframes slider-gambar {
+
+    /* Gambar 1 */
+    0%, 26% {
+        transform: translateX(0);
+    }
+
+    /* Gambar 2 */
+    33%, 56% {
+        transform: translateX(-100%);
+    }
+
+    /* Gambar 3 */
+    66%, 96% {
+        transform: translateX(-200%);
+    }
+
+    /* Kembali ke gambar 1 */
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*===Category===*/
+.category{
+    background-color: #C5A059;
+    height: 600px;
+
+}
+.category a{
+    text-decoration: none;
+}
+.category h2{
+    font-size: 40px;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font-family: "Cinzel Decorative";
+}
+
+.category .selector-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 270px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    font-size: 30px;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.category .selector-1 img{
+    width: 150px;
+}
+.category .category-selector{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.category .selector-1:hover{
+    transform: scale(1.1);
+}
+.category .selector-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 270px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    font-size: 30px;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.category .selector-2 img{
+    width: 150px;
+}
+.category .selector-2:hover{
+    transform: scale(1.1);
+}
+/*=== Produk ===*/
+
+.Product {
+    margin: 30px;
+}
+
+.pro {
+    color: #C5A059;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 80px;
+    padding-top: 150px;
+}
+
+/* Judul Cardigan */
+#Cardigan {
+    padding: 50px 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #C5A059;
+}
+
+/* GRID PRODUK */
+.grid-prod {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* CARD PRODUK */
+.Cardigan {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.Cardigan:hover {
+    transform: translateY(-8px);
+}
+
+/* FOTO PRODUK */
+.Cardigan img {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+}
+
+/* NAMA PRODUK */
+.Cardigan span {
+    margin-top: 15px;
+}
+
+/* HARGA */
+.harga {
+    color: #C5A059;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*fake harga marketing*/
+.fake-harga{
+    color: tomato;
+    font-size: 17px;
+}
+/* TOMBOL ORDER */
+.Cardigan button{
+    margin-top: 15px;
+    height: 30px;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border: orange 2px solid;
+}
+.Cardigan button:hover{
+    color: orange;
+    background-color: white;
+}
+
+/*=============bUKET---------  */
+.buket-prod{
+    margin: 30px;
+}
+#Buket {
+    padding: 100px 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #C5A059;
+}
+
+/* GRID PRODUK */
+.grid-buket {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* CARD PRODUK */
+.buket {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+.buket:hover {
+    transform: translateY(-8px);
+}
+
+/* FOTO PRODUK */
+.buket img {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+}
+
+/* NAMA PRODUK */
+.buket span {
+    margin-top: 15px;
+}
+.buket button{
+    margin-top: 15px;
+    height: 30px;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border: orange 2px solid;
+}
+.buket button:hover{
+    color: orange;
+    background-color: white;
+}
+/*======LOCATION=======*/
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    background-color: #C5A059;
+    padding: 30px;
+}
+.location h2{
+    font-size: 70px;
+    font-family: "Cinzel Decorative";
+}
+
+/*=====Media====*/
+.media{
+    color: #C5A059;
+    font-size: 20px;
+    margin: 30px;
+}
+.media h2{
+    font-family: "Cinzel Decorative";
+    padding-top: 70px;
+    font-size: 70px;
+}
+.media .media-grup{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
+}
+
+/*=====Foooter======*/
+.Footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.Footer span{
+    padding: 17px;
+}
+.Footer a{
+    text-decoration: none;
+    color: white;
+}
+.Footer a:hover{
+    color: #C5A059;
+}
+
+
+/*===Floating Wa===*/
+.floating-wa{
+    background-color: lime;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px black;
+}
+.floating-wa a img{
+    width: 40px;
+}
+.floating-wa:hover{
+    transform: scale(1.1);
+}
+hr{
+    height: 2px;
+    border: none;
+    background-color: black;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.media-grup {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.media-grup iframe {
+    width: 325px;
+    height: 575px;
+    border: none;
+    border-radius: 15px;
+}
+
+/* =========================================
+   RESPONSIVE ANDROID / HP
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    /* ===== NAVBAR ===== */
+    nav {
+        height: 70px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        align-items: center;
+    }
+
+    nav .Logo img {
+        width: 75px;
+        margin-left: 5px;
+    }
+
+    nav ul {
+        gap: 10px;
+        margin: 0 10px 0 0;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* ===== HERO ===== */
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 100px 20px 50px;
+        box-sizing: border-box;
+        background-position: center;
+        justify-content: center;
+    }
+
+    .hero .sosmed {
+        margin: 0 0 20px 0;
+        gap: 18px;
+    }
+
+    .ikon-instagram,
+    .ikon-tiktok {
+        font-size: 1.7rem;
+    }
+
+    .shopee img {
+        width: 1.7rem;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+        line-height: 1.3;
+        margin: 0 0 20px 0;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 0 0 20px 0;
+    }
+
+    .hero .order-btn {
+        width: fit-content;
+        font-size: 18px;
+        padding: 12px 20px;
+        margin: 0;
+    }
+
+
+    /* ===== ABOUT ===== */
+    .about {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 40px;
+        padding: 80px 0 40px;
+        line-height: 1.3;
+    }
+
+    .about p {
+        padding: 30px 0;
+        line-height: 1.7;
+    }
+
+    .about .galeri-slider {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .about .galeri-slider img {
+        width: 100%;
+        min-width: 100%;
+    }
+
+
+    /* ===== CATEGORY ===== */
+    .category {
+        height: auto;
+        min-height: 500px;
+        padding-bottom: 60px;
+    }
+
+    .category h2 {
+        font-size: 35px;
+        padding: 80px 20px 30px;
+    }
+
+    .category .category-selector {
+        gap: 25px;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .category .selector-1,
+    .category .selector-2 {
+        width: 145px;
+        height: 210px;
+        font-size: 22px;
+    }
+
+    .category .selector-1 img,
+    .category .selector-2 img {
+        width: 110px;
+    }
+
+
+    /* ===== PRODUCT ===== */
+    .Product {
+        margin: 20px;
+    }
+
+    .pro {
+        font-size: 45px;
+        padding-top: 80px;
+        line-height: 1.3;
+    }
+
+    #Cardigan,
+    #Buket {
+        font-size: 35px;
+        padding: 50px 0 25px;
+    }
+
+
+    /* ===== GRID PRODUCT ===== */
+    .grid-prod,
+    .grid-buket {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* ===== CARD ===== */
+    .Cardigan,
+    .buket {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        border-radius: 18px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .Cardigan img,
+    .buket img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 13px;
+    }
+
+    .Cardigan span,
+    .buket span {
+        margin-top: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* ===== HARGA ===== */
+    .harga {
+        font-size: 21px;
+    }
+
+    .fake-harga {
+        font-size: 15px;
+    }
+
+
+    /* ===== BUTTON ===== */
+    .Cardigan button,
+    .buket button {
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+        margin-top: 12px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+
+    /* ===== BUKET ===== */
+    .buket-prod {
+        margin: 20px;
+    }
+
+
+    /* ===== LOCATION ===== */
+    .location {
+        padding: 60px 20px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .location h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .location p {
+        line-height: 1.6;
+    }
+
+    .location iframe {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px;
+    }
+
+
+    /* ===== MEDIA ===== */
+    .media {
+        margin: 20px;
+        font-size: 17px;
+    }
+
+    .media h2 {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+
+    .media .media-grup {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+
+    /* ===== FOOTER ===== */
+    .Footer {
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    .Footer span {
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .floating-wa {
+        width: 58px;
+        height: 58px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-wa a img {
+        width: 34px;
+    }
+
+     nav {
+        height: 70px;
+        top: 0;
+        left: 0;
+        padding: 5px 15px;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: rgba(250, 235, 215, 0.95);
+    }
+
+    /* LOGO */
+    nav .Logo img {
+        width: 75px;
+        margin-left: 5px;
+    }
+
+    /* TOMBOL HAMBURGER */
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 45px;
+        height: 45px;
+
+        border: none;
+        background: transparent;
+
+        font-size: 30px;
+        color: black;
+
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .menu-toggle:hover {
+        color: #C5A059;
+    }
+
+    /* MENU */
+    nav ul {
+        position: absolute;
+
+        top: 70px;
+        right: 0;
+
+        width: 100%;
+
+        margin: 0;
+        padding: 15px 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        background-color: rgba(250, 235, 215, 0.98);
+
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+
+        list-style: none;
+    }
+
+    /* MENU SAAT AKTIF */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* LINK */
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 15px 0;
+
+        font-size: 18px;
+        color: black;
+
+        text-decoration: none;
+
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover {
+        background-color: #C5A059;
+        color: white;
+    }
+
+
+    .media-grup {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .media-grup iframe {
+        width: 100%;
+        max-width: 325px;
+        height: 575px;
+    }
+    .about .galeri-slider {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .about .galeri-slider img {
+        width: 100%;
+        min-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+/* =========================================
+   TABLET
+   601px - 1023px
+   ========================================= */
+
+@media (min-width: 601px) and (max-width: 1023px) {
+
+    /* ===== NAVBAR ===== */
+    nav .Logo img {
+        width: 85px;
+    }
+
+    nav ul {
+        gap: 18px;
+        margin-right: 15px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+
+    /* ===== HERO ===== */
+    .hero {
+        min-height: 100vh;
+        background-position: center;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .hero .sosmed {
+        margin-left: 0;
+        margin-top: 150px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 1.3;
+        margin-left: 0;
+    }
+
+    .hero p {
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    .hero .order-btn {
+        margin-left: 0;
+    }
+
+
+    /* ===== ABOUT ===== */
+    .about {
+        margin: 30px;
+    }
+
+    .about h2 {
+        font-size: 55px;
+        padding: 100px 0 60px;
+    }
+
+    .about .galeri-slider {
+        width: 80%;
+        max-width: 650px;
+    }
+
+    .about .galeri-slider img {
+        width: 100%;
+        min-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+    /* ===== CATEGORY ===== */
+    .category {
+        height: auto;
+        min-height: 550px;
+        padding-bottom: 60px;
+    }
+
+    .category h2 {
+        font-size: 45px;
+        padding-top: 120px;
+    }
+
+    .category .category-selector {
+        gap: 40px;
+    }
+
+    .category .selector-1,
+    .category .selector-2 {
+        width: 180px;
+        height: 240px;
+    }
+
+
+    /* ===== PRODUCT ===== */
+    .pro {
+        font-size: 60px;
+    }
+
+    #Cardigan,
+    #Buket {
+        font-size: 42px;
+    }
+
+
+    /* ===== PRODUCT GRID ===== */
+    .grid-prod,
+    .grid-buket {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 750px;
+        padding: 0 20px;
+    }
+
+
+    /* ===== PRODUCT CARD ===== */
+    .Cardigan,
+    .buket {
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+        padding: 12px;
+    }
+
+    .Cardigan img,
+    .buket img {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+    }
+
+    .Cardigan span,
+    .buket span {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .harga {
+        font-size: 21px;
+    }
+
+    .Cardigan button,
+    .buket button {
+        cursor: pointer;
+    }
+
+
+    /* ===== LOCATION ===== */
+    .location {
+        padding: 50px 30px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .location h2 {
+        font-size: 55px;
+    }
+
+    .location iframe {
+        width: 90%;
+        max-width: 800px;
+    }
+
+
+    /* ===== MEDIA ===== */
+    .media h2 {
+        font-size: 55px;
+    }
+
+    .media-grup {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
